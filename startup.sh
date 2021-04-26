@@ -8,6 +8,12 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 # install logstash START ------------------------
+
+#java is a prereq
+sudo apt install default-jre
+sudo apt install default-jdk
+
+
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 
 sudo apt-get install apt-transport-https
